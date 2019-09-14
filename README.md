@@ -1,2 +1,7 @@
-# LeetCode
-用来记录在LeetCode刷的题
+## 说明
+- 记录LeetCode题解，日更
+- 解题编程语言：Java
+- 我的博客网站：tangyiheng.top
+
+
+
