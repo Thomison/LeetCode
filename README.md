@@ -10,6 +10,6 @@
 ## 按题号
 
 - [234.回文链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/234_回文链表.java)
-- [237.删除链表中的当前结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/237_删除链表中的当前结点.java)
+- [237.删除链表中的当前结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/237_删除链表中的当前节点.java)
 - [876.链表的中间结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/876_链表的中间结点.java)
 
