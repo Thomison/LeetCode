@@ -11,6 +11,7 @@
 
 - [234.回文链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/234_回文链表.java)
 - [237.删除链表中的当前结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/237_删除链表中的当前节点.java)
-- [328.奇偶链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/328_奇偶链表)
+- [328.奇偶链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/328_奇偶链表.java)
+- [707.设计链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/707_设计链表.java)
 - [876.链表的中间结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/876_链表的中间结点.java)
 
