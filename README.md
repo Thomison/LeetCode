@@ -9,5 +9,6 @@
 
 ## 按题号
 
-- [876.链表的中间结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/876_链表的中间结点.java)
 - [234.回文链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/234_回文链表.java)
+- [876.链表的中间结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/876_链表的中间结点.java)
+
