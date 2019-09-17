@@ -11,9 +11,10 @@
 
 ## 按题号
 
+- [21.合并两个有序链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/143_重排链表.java)
 - [108.将有序数组转换为二叉搜索树](https://github.com/tangyihengsb/LeetCode/blob/master/二叉搜索树/108_将有序数组转换为二叉搜索树.java)
 - [109.有序链表转换二叉搜索树](https://github.com/tangyihengsb/LeetCode/blob/master/二叉搜索树/109_有序链表转换二叉搜索树.java)
-- [134.重排链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/143_重排链表)
+- [134.重排链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/143_重排链表.java)
 - [234.回文链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/234_回文链表.java)
 - [237.删除链表中的当前结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/237_删除链表中的当前节点.java)
 - [328.奇偶链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/328_奇偶链表.java)
