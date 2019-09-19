@@ -7,11 +7,14 @@
 
 - [数组](https://github.com/tangyihengsb/LeetCode/tree/master/数组)
 - [链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表)
+- [栈](https://github.com/tangyihengsb/LeetCode/blob/master/栈)
 - [二叉搜索树](https://github.com/tangyihengsb/LeetCode/tree/master/二叉搜索树)
 
 ## 按题号
 
+- [20.有效的括号](https://github.com/tangyihengsb/LeetCode/blob/master/栈/20_有效的括号.java)
 - [21.合并两个有序链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/143_重排链表.java)
+- [42.接雨水.java](https://github.com/tangyihengsb/LeetCode/blob/master/栈/42_接雨水.java)
 - [108.将有序数组转换为二叉搜索树](https://github.com/tangyihengsb/LeetCode/blob/master/二叉搜索树/108_将有序数组转换为二叉搜索树.java)
 - [109.有序链表转换二叉搜索树](https://github.com/tangyihengsb/LeetCode/blob/master/二叉搜索树/109_有序链表转换二叉搜索树.java)
 - [134.重排链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/143_重排链表.java)
@@ -26,4 +29,5 @@
 - [725.分隔链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/725_分隔链表.java)
 - [817.链表组件](https://github.com/tangyihengsb/LeetCode/blob/master/链表/817_链表组件.java)
 - [876.链表的中间结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/876_链表的中间结点.java)
+- [1019_链表的一个更大结点.java](https://github.com/tangyihengsb/LeetCode/blob/master/链表/1019_链表的一个更大结点.java)
 
