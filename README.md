@@ -21,7 +21,7 @@
 - [134.重排链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/143_重排链表.java)
 - [138.复制带随机指针的链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/138_复制带随机指针的链表.java)
 - [148.排序链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/148_排序链表.java)
-- [155.最小栈](https://github.com/tangyihengsb/LeetCode/new/master/栈/155_最小栈.java)
+- [155.最小栈](https://github.com/tangyihengsb/LeetCode/blob/master/栈/155_最小栈.java)
 - [160.相交链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/160_相交链表.java)
 - [234.回文链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/234_回文链表.java)
 - [237.删除链表中的当前结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/237_删除链表中的当前节点.java)
