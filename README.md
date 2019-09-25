@@ -23,7 +23,7 @@
 - [134.重排链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/143_重排链表.java)
 - [138.复制带随机指针的链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/138_复制带随机指针的链表.java)
 - [144.二叉树的前序遍历](https://github.com/tangyihengsb/LeetCode/blob/master/二叉树/144_二叉树的前序遍历.java)
-- [145.二叉树的后序遍历](https://github.com/tangyihengsb/LeetCode/blob/master/二叉树/145_二叉树的前序遍历.java)
+- [145.二叉树的后序遍历](https://github.com/tangyihengsb/LeetCode/blob/master/二叉树/145_二叉树的后序遍历.java)
 - [148.排序链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/148_排序链表.java)
 - [150.逆波兰表达式求值](https://github.com/tangyihengsb/LeetCode/blob/master/栈/150_逆波兰表达式求值.java)
 - [155.最小栈](https://github.com/tangyihengsb/LeetCode/blob/master/栈/155_最小栈.java)
