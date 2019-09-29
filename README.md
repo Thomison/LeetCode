@@ -9,6 +9,7 @@
 - [链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表)
 - [栈](https://github.com/tangyihengsb/LeetCode/blob/master/栈)
 - [二叉搜索树](https://github.com/tangyihengsb/LeetCode/tree/master/二叉搜索树)
+- [动态规划](https://github.com/tangyihengsb/LeetCode/blob/master/动态规划)
 
 ## 按题号
 
@@ -33,6 +34,7 @@
 - [232.用栈实现队列](https://github.com/tangyihengsb/LeetCode/blob/master/栈/232_用栈实现队列.java)
 - [234.回文链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/234_回文链表.java)
 - [237.删除链表中的当前结点](https://github.com/tangyihengsb/LeetCode/blob/master/链表/237_删除链表中的当前节点.java)
+- [322.硬币兑换](https://github.com/tangyihengsb/LeetCode/blob/master/动态规划/322_硬币兑换.java)
 - [328.奇偶链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/328_奇偶链表.java)
 - [430.扁平化多级双向链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/430_扁平化多级双向链表.java)
 - [707.设计链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/707_设计链表.java)
