@@ -8,6 +8,7 @@
 - [数组](https://github.com/tangyihengsb/LeetCode/tree/master/数组)
 - [链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表)
 - [栈](https://github.com/tangyihengsb/LeetCode/blob/master/栈)
+- [二叉树](https://github.com/tangyihengsb/LeetCode/tree/master/二叉树)
 - [二叉搜索树](https://github.com/tangyihengsb/LeetCode/tree/master/二叉搜索树)
 - [动态规划](https://github.com/tangyihengsb/LeetCode/blob/master/动态规划)
 
