@@ -14,6 +14,7 @@
 
 ## 按题号
 
+- [5.最大回文子串](https://github.com/tangyihengsb/LeetCode/blob/master/动态规划/5_最大回文子串.java)
 - [20.有效的括号](https://github.com/tangyihengsb/LeetCode/blob/master/栈/20_有效的括号.java)
 - [21.合并两个有序链表](https://github.com/tangyihengsb/LeetCode/blob/master/链表/143_重排链表.java)
 - [42.接雨水.java](https://github.com/tangyihengsb/LeetCode/blob/master/栈/42_接雨水.java)
