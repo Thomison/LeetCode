@@ -51,3 +51,20 @@ class Solution {
         return dummy.next;
     }
 }
+
+
+//递归
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+			if(head == null || head.next == null){
+        return head;
+      }
+      ListNode next = head.next;
+      //首先，先让head连接后面交换好的子链表
+      head.next = swapPairs(next.next);
+      //然后，完成当前需要交换的两个结点
+      next.next = head;
+      //返回当前子链表的首结点
+      return next;
+    }
+}
