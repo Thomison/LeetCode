@@ -1,5 +1,5 @@
 ## 进度
-![](https://imgchr.com/i/KPsTyR)
+![https://imgchr.com/i/KPsTyR](https://imgchr.com/i/KPsTyR)
 
 ## 说明
 - 记录LeetCode题解，日更
