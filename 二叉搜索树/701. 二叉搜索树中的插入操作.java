@@ -1,27 +1,27 @@
 //非递归
 class Solution {
     public TreeNode insertIntoBST(TreeNode root, int val) {
-        TreeNode y = null;
-        TreeNode x = root;
-        TreeNode z = new TreeNode(val);
+        TreeNode pre = null;
+        TreeNode curr = root;
+        TreeNode goal = new TreeNode(val);
         
-        while(x != null && val != x.val) {
-            y = x;	//更新父结点
-            if(val < x.val) {
-                x = x.left;
+        while(curr != null && val != curr.val) {
+            pre = curr;	//更新父结点
+            if(val < curr.val) {
+                curr = curr.left;
             }else {
-                x = x.right;
+                curr = curr.right;
             }
         }
         
-        if(x != null) return root; //不用插入的情况
+        if(curr != null) return root; //不用插入的情况
         
-        if(y == null) {
-            root = z;
-        } else if(val < y.val) {
-            y.left = z;
+        if(pre == null) {
+            root = goal;
+        } else if(val < pre.val) {
+            pre.left = goal;
         } else {
-            y.right = z;
+            pre.right = goal;
         }
         
         return root;
