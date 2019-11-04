@@ -1,20 +1,19 @@
+// bfs
 class Solution {
     int ans;
-    Node root;
     Queue<Node> queue;
         
     public int maxDepth(Node root) {
         if(root == null) return 0;
-        ans = 0;
-        this.root = root;    
+        ans = 0;   
         queue = new LinkedList<>();
         
-        bfs();
+        bfs(root);
         
         return ans;
     }
     
-    void bfs() {
+    void bfs(Node root) {
         queue.offer(root);
         int cnt = 0;        //记录层数
         
@@ -33,5 +32,34 @@ class Solution {
         }
         
         ans = cnt;
+    }
+}
+
+
+//dfs
+class Solution {
+    int ans;
+        
+    public int maxDepth(Node root) {
+        if(root == null) return 0;
+        ans = 0;    
+        
+        dfs(root, 0);
+        
+        return ans;
+    }
+
+    void dfs(Node root, int tmp) {
+        if(root == null) {
+            return;
+        }else {
+            if(root.children.size() == 0) { //叶子
+                ans = Math.max(ans, tmp+1);
+            }else {
+                for(int i=0; i<root.children.size(); i++) {
+                    dfs(root.children.get(i), tmp+1);
+                }
+            }
+        }
     }
 }
