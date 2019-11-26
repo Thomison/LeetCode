@@ -1,87 +1,81 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
-//dfs构造出可能得算术表达式情况，然后用逆波兰表达式求解，判断每种情况是否等于24
+//枚举所有可能的逆波兰表达式，然后计算这个表达式.
+/*
+４个操作数不重复:24，３个操作符号可重复:64
+共24*64=1536种情况
+情况:
+AB#C#D#
+AB#CD##
+ABC#D##
+ABC##D#
+ABCD###
+*/
 class Solution {
-    char[] operators={'+','-','*','/','(',')'};
-    
-    public boolean judgePoint24(int[] nums) {
-        
-    }
+    List<String> all=new ArrayList<>(1536*5);
+    int[] nums;
+    char[] opers;
 
-    /*
-    input:  str
-    output: int
-    */
-    int compute(String str) {
-        //构造操作符优先级
-        Map<Character, Integer> priority=new HashMap<>();
-        for(char o: operators) {
-            if(0=='(' || o==')') priority.put(o, 0);
-            else if(o=='+' || o=='-') priority.put(o, 1);
-            else priority.put(o, 2);
+    public boolean judgePoint24(int[] nums) {
+        this.nums=nums;
+        createAll();
+        for(String s: all) {
+            if(isSame(s)) return true;
         }
-        //表达式字符串转化为后缀字符列表
-        char[] chars=str.toCharArray();
-        Stack<Character> s1=new Stack<>(), s2=new Stack<>();
-        for(char c: chars) {
-            if(c>='0' && c<='9') s2.push(c);
-            else {
-                if(s1.empty())  s1.push(c);
-                else {
-                    if(c=='(') s1.push(c);
-                    else if(c==')') {
-                        while(!s1.peek('(')) s2.push(s1.pop());
-                        s1.pop();   //pop '('
-                    }else {
-                        if(priority.get(c)>priority.get(s1.peek())) 
-                            s1.push(c);
-                        else {
-                            while(priority.get(c)<priority.get(s1.peek())) {
-                                s2.push(s1.pop());
-                                if(s1.empty())  break;
+        return false;
+    }
+    void createAll() {
+        opers=new char[]{'+','-','*','/'};
+
+        for(int i1=0; i1<4; i1++) {
+            for(int i2=0; i2<4; i2++) {
+                if(i1==i2)  continue;
+                for(int i3=0; i3<4; i3++) {
+                    if(i3==i1 || i3==i2)    continue;
+                    int i4=(0+1+2+3)-i1-i2-i3;
+                    for(int o1=0; o1<4; o1++) {
+                        for(int o2=0; o2<4; o2++) {
+                            for(int o3=0; o3<4; o3++) {
+                                //AB#C#D#
+                                all.add(""+nums[i1]+nums[i2]+opers[o1]+nums[i3]+opers[o2]+nums[i4]+opers[o3]);
+                                //AB#CD##
+                                all.add(""+nums[i1]+nums[i2]+opers[o1]+nums[i3]+nums[i4]+opers[o2]+opers[o3]);
+                                //ABC#D##
+                                all.add(""+nums[i1]+nums[i2]+nums[i3]+opers[o1]+nums[i4]+opers[o2]+opers[o3]);
+                                //ABC##D#
+                                all.add(""+nums[i1]+nums[i2]+nums[i3]+opers[o1]+opers[o2]+nums[i4]+opers[o3]);
+                                //ABCD###
+                                all.add(""+nums[i1]+nums[i2]+nums[i3]+nums[i4]+opers[o1]+opers[o2]+opers[o3]);
                             }
-                            s1.push(c);
                         }
                     }
                 }
             }
         }
-        if(!s1.empty()) {
-            while(!s1.empty()) s2.push(s1.pop());
-        }
-        List<Character> postfix=new ArrayList<>();
-        int cnt=0;
-        while(!s2.empty()) {
-            postfix.add(s2.pop());
-        }
-        //逆波兰表达式求解表达式
-        Stack<Double> s3=new Stack<>();
-        for(Character c: postfix) {
-            if(s3.empty()) s3.push(Double.valueOf(c));
+    }
+    boolean isSame(String str) {
+        char[] chars=str.toCharArray();
+        Stack<Double> s=new Stack<>();
+        for(char c: chars) {
+            if(c>='0' && c<='9') s.push(Double.valueOf(c));
             else {
-                if(c>='0' && c<='9') s3.push(Double.valueOf(c));
-                else {
-                    int num2=s3.pop(), num1=s3.pop();
-                    switch(c) {
-                        case '+':
-                            s3.push(num1+num2);
-                            break;
-                        case '-':
-                            s3.push(num1-num2);
-                            break;
-                        case '*':
-                            s3.push(num1*num2);
-                            break;
-                        case '/':
-                            s3.push(num1/num2);
-                            break;
-                    }
+                double operand2=s.pop(), operand1=s.pop();
+                switch(c) {
+                    case '+':
+                        s.push(operand1+operand2);
+                        break;
+                    case '-':
+                        s.push(operand1-operand2);
+                        break;
+                    case '*':
+                        s.push(operand1*operand2);
+                        break;
+                    case '/':
+                        if(operand2==0) return false;
+                        else {s.push(operand1/operand2); break;}
                 }
             }
         }
-        return (int)s3.pop();
+        double ret=s.pop();
+        if(Math.abs(ret-24)<0.001) return true;
+        else return false;
     }
 }
