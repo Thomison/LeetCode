@@ -82,7 +82,7 @@ class Solution {
 方程组如下：
 
 $$
-\left\lbrace 
+\left{
 \begin{aligned}
     4x+2y=tomatoSlices \\
     x+y=cheeseSlices
@@ -195,7 +195,7 @@ $ dp2[i][j]$:表示字符串前缀$S_{0i}$划分为$j$个回文串的最小修�
 
 $$
 dp1[i][j]=
-\left\lbrace 
+\left{
     \begin{aligned}
         dp1[i+1][j-1],s(i)=s(j)\\
         dp1[i+1][j-1]+1,s(i)!=s(j)
