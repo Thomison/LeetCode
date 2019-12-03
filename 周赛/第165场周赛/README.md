@@ -195,12 +195,12 @@ $ dp2[i][j]$:表示字符串前缀$S_{0i}$划分为$j$个回文串的最小修�
 
 $$
 dp1[i][j]=
-\left{
+\left\lbrace
     \begin{aligned}
         dp1[i+1][j-1],s(i)=s(j)\\
         dp1[i+1][j-1]+1,s(i)!=s(j)
     \end{aligned}
-\right.
+\right\rbrace
 $$
 
 $$
