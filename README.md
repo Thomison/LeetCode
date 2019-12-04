@@ -1,5 +1,3 @@
-## 进度
-![KPsTyR.png](https://s2.ax1x.com/2019/10/15/KPsTyR.png)
 
 ## 说明
 - 记录LeetCode题解，日更
